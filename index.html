@@ -1,0 +1,74 @@
+<!DOCtYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muziko</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+</head>
+<body>
+    <div cloass="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>    
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="toggleMenu()">
+        </div>   
+    </div>  
+    <div class="row">
+        <div class="col-1">
+            <h2>Keep On Grinding</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button type="button">Join Now</button>    
+        </div>
+        <div class="col-2">
+            <img src="images/rocknroll.png" class="controller">
+        </div>              
+    </div> 
+    <div class="row-2">
+        <img src="images/design.svg" class="svg">
+    </div> 
+    <div class="row-3">
+        <div class="col-3">
+            <img src="images/Devices.png" class="devices">
+        </div>
+        <div class="col-4">
+            <h2>Now On Any Platform</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-adobe" ></i></a></li>
+                <li><a href="#"><i class="fab fa-html5"></i></a></li>
+                <li><a href="#"><i class="fab fa-css3-alt"></i></a></li>
+                <li><a href="#"><i class="fab fa-angular"></i></a></li>
+                <li><a href="#"><i class="fab fa-php"></i></a></li>
+                <li><a href="#"><i class="fab fa-codepen"></i></a></li>             
+            </ul>    
+            <button type="button">Join Now</button>
+        </div>
+    </div>   
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "150px"
+            }
+            else
+            {
+               menuList.style.maxHeight = "0px"
+            }
+
+        }
+    </script>
+</body>
+</html>
